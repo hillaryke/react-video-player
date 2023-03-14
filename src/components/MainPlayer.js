@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactPlayer from "react-player";
-import './videoplayer.css';
 
 const MainPlayer = () => {
    const ref = React.useRef(null);
@@ -14,6 +13,7 @@ const MainPlayer = () => {
           <h2 className="text-4xl font-light text-center py-6">Weddings</h2>
           <p className="text-xl font-light text-center pb-6">We love to capture the love and joy of your special day. We are based in the beautiful city of Cape Town, South Africa. We are available to travel anywhere in the world.</p>
           <div className="w-full h-[90%] relative">
+             <div className="show-hide-button absolute p-7 bg-gray-200 h-[90px] w-[90px] rounded-[100px]">Play</div>
              <ReactPlayer
                  ref={ref}
                  controls
