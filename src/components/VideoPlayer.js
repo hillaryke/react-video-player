@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 const VideoPlayer = () => {
    return (
-       <div >
+       <div className="w-full h-full">
           <ReactPlayer
               controls
               url="https://player.vimeo.com/video/807676404"
