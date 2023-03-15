@@ -32,27 +32,49 @@
    height: 100px !important;
 }
 
-.show-hide-button {
-   top: 5%;
-   left: 50%;
-   transform: translateX(-50%);
-   /*opacity: 0;*/
+#exit-button {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: fit-content;
+   height: fit-content;
+   visibility: hidden;
+   z-index: 999;
 
-   /*animation: showExitBtn 2s;*/
+   /*animation: moveUp 3s;*/
 }
 
-.showExitButton {
-   opacity: 1;
-   /*animation: showExitBtn 2s;*/
+#exit-button.show {
+   visibility: visible;
+   animation: moveUp 3s;
+   /*transform: translateY(-250%);*/
 }
 
-.hideExitButton {
-   opacity: 0;
-   /*animation: showExitBtn 2s;*/
-}
+/*.show-hide-button {*/
+/*   top: 50%;*/
+/*   left: 50%;*/
+/*   transform: translate(-50%, -50%);*/
+/*   !*opacity: 0;*!*/
+
+/*   !*animation: showExitBtn 2s;*!*/
+/*}*/
+
+/*.showExitButton {*/
+/*   opacity: 1;*/
+/*   !*animation: showExitBtn 2s;*!*/
+/*}*/
+
+/*.hideExitButton {*/
+/*   opacity: 0;*/
+/*   !*animation: showExitBtn 2s;*!*/
+/*}*/
 
 .player-container__darken {
    background-color: #000000;
+   transition: color 0.3s ease-in-out;
 }
 
 @keyframes showExitBtn {
@@ -60,6 +82,13 @@
       opacity: 0;
    }
    100% {
+      opacity: 1;
+   }
+}
+
+@keyframes moveUp {
+   100% {
+      transform: translateY(-250%);
       opacity: 1;
    }
 }
