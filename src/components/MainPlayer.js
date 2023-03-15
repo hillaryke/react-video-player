@@ -43,7 +43,7 @@ const MainPlayer = () => {
           <p className="text-xl font-light text-center pb-6">We love to capture the love and joy of your special day. We
              are based in the beautiful city of Cape Town, South Africa. We are available to travel anywhere in the
              world.</p>
-          <div id="player-container" className="w-full h-[90%] relative bg-black">
+          <div id="player-container" className="w-full h-[90%] relative bg-black hover:cursor-pointer">
              <div id="exit-button"
                   className="hover:cursor-pointer show-hide-button p-7 bg-gray-200 h-[90px] w-[90px] rounded-[100px]"
                   onClick={handleShowPreview}
