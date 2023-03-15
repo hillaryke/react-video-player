@@ -13,7 +13,6 @@ const playIconButton = () => {
 
 const MainPlayer = () => {
    const [exitButton, setExitButton] = React.useState(null);
-   const [playing, setPlaying] = React.useState(false);
    const [playerReady, setPlayerReady] = React.useState(false);
    const ref = React.useRef(null);
 
@@ -30,15 +29,11 @@ const MainPlayer = () => {
       ref.current.showPreview();
    }
 
-   const handlePlayClick = () => {
-      setPlaying(true);
-   }
-
    const handleClickPreview = () => {
       console.log('Clicked Preview');
       console.log(exitButton)
-      exitButton.classList.add('show');
       exitButton.classList.remove('hide');
+      exitButton.classList.add('show');
    }
 
    return (

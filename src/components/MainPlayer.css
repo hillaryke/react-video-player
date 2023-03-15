@@ -52,6 +52,7 @@
    /*transform: translateY(-250%);*/
    visibility: hidden;
    z-index: 999;
+   transition: visibility 700ms;
 
    /*animation: moveUp 3s;*/
 }
@@ -59,20 +60,20 @@
 #exit-button.show {
    visibility: visible;
    transform: translateY(-250%);
-   animation: moveUp 3s;
+   animation: moveUp 700ms;
 }
 
 #exit-button.hide {
    visibility: hidden;
-   /*transform: translateY(0);*/
-   animation: moveDown 3s;
 
+   /*transform: translateY(0);*/
    transform: translateY(0);
-   transition: all 5s;
+   animation: moveDown 700ms;
 }
 
 #playButton {
    z-index: 9999;
+   animation: showPlayBtn 700ms;
 }
 
 /*.show-hide-button {*/
