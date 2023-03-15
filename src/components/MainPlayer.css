@@ -49,12 +49,9 @@
    width: fit-content;
    height: fit-content;
 
-   /*transform: translateY(-250%);*/
    visibility: hidden;
    z-index: 999;
    transition: visibility 700ms;
-
-   /*animation: moveUp 3s;*/
 }
 
 #exit-button.show {
@@ -65,8 +62,6 @@
 
 #exit-button.hide {
    visibility: hidden;
-
-   /*transform: translateY(0);*/
    transform: translateY(0);
    animation: moveDown 700ms;
 }
@@ -76,25 +71,15 @@
    animation: showPlayBtn 700ms;
 }
 
-/*.show-hide-button {*/
-/*   top: 50%;*/
-/*   left: 50%;*/
-/*   transform: translate(-50%, -50%);*/
-/*   !*opacity: 0;*!*/
-
-/*   !*animation: showExitBtn 2s;*!*/
-/*}*/
-
-/*.showExitButton {*/
-/*   opacity: 1;*/
-/*   !*animation: showExitBtn 2s;*!*/
-/*}*/
-
-/*.hideExitButton {*/
-/*   opacity: 0;*/
-/*   !*animation: showExitBtn 2s;*!*/
-/*}*/
-
+/* TODO hide exit button when hovering outside player container*/
+/* hide exit button on hover outside player container */
+#player-container:not(:hover) #exit-button {
+   visibility: hidden;
+   transition: visibility 700ms;
+   /*visibility: ;*/
+   /*transform: translateY(0);*/
+   animation: moveDown 700ms;
+}
 
 @keyframes showExitBtn {
    0% {
