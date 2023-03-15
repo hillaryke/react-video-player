@@ -48,6 +48,8 @@
    margin: auto;
    width: fit-content;
    height: fit-content;
+
+   /*transform: translateY(-250%);*/
    visibility: hidden;
    z-index: 999;
 
@@ -60,11 +62,14 @@
    animation: moveUp 3s;
 }
 
-/*#exit-button.hide {*/
-/*   visibility: hidden;*/
-/*   transform: translateY(0);*/
-/*   animation: moveDown 3s;*/
-/*}*/
+#exit-button.hide {
+   visibility: hidden;
+   /*transform: translateY(0);*/
+   animation: moveDown 3s;
+
+   transform: translateY(0);
+   transition: all 5s;
+}
 
 #playButton {
    z-index: 9999;
