@@ -1,9 +1,9 @@
 import React from 'react';
-import MainPlayer from "./components/MainPlayer";
+import VideoPlayer from "./components/videoplayer/VideoPlayer";
 
 const App = () => {
    return (
-       <MainPlayer />
+       <VideoPlayer />
    );
 };
 

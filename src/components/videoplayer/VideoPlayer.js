@@ -12,7 +12,7 @@ const playIconButton = () => {
    );
 };
 
-const MainPlayer = () => {
+const VideoPlayer = () => {
    const [exitButton, setExitButton] = React.useState(null);
    const [playerReady, setPlayerReady] = React.useState(false);
    const ref = React.useRef(null);
@@ -76,4 +76,4 @@ const MainPlayer = () => {
    );
 };
 
-export default MainPlayer;
+export default VideoPlayer;
